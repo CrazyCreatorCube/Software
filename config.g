@@ -38,7 +38,7 @@ M569 P10 S1                                                                     
 
 ; Triple Point Kinematic Bed Ball Ponts Location
 ; Locations are from our CAD-Model, change to your measurement
-M671 X-55:415:180 Y-25:-25:378 S10		                                                  ; position of z spindles - for automatic bed leveling - check positions!
+M671 X-55:415:180 Y-25:-25:378 S10		                                                ; position of z spindles - for automatic bed leveling - check positions!
 
 ; Axis and Motor Config
 M350 X16 Y16 Z16:16:16 E16:16:16:16:16 C16 I1                                           ; configure microstepping with interpolation
