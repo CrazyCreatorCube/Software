@@ -26,18 +26,19 @@ M569 P1 S1                                                                      
 M569 P2 S1                                                                              ; physical drive 2 goes forwards - z1-Axis
 M569 P8 S1                                                                              ; physical drive 8 goes forwards - z2-Axis (E5 on Duex)
 M569 P9 S1                                                                              ; physical drive 9 goes forwards - z3-Axis (E6 on Duex)
-; Tools / Extruder 
+; Tools / Extruder - For using DirectDrive or Bowden on Tools itself
 M569 P3 S1                                                                              ; physical drive 3 goes forwards - Extruder E0 for Tool 0
 M569 P4 S1                                                                              ; physical drive 4 goes forwards - Extruder E1 for Tool 1
 M569 P5 S1                                                                              ; physical drive 5 goes forwards - Extruder E2 for Tool 2 (Duex5)
 M569 P6 S1                                                                              ; physical drive 6 goes forwards - Extruder E3 for Tool 3 (Duex5)
+; Remote Extruder located on X-Carriage
 M569 P7 S1                                                                              ; physical drive 7 goes forwards - Extruder E4 - on x-carriage - (Duex5)
 ; Tool Changer Lock Pin
 M569 P10 S1                                                                             ; physical drive 10 goes forwards - external Stepper Driver for Tool Change Coupler, see https://duet3d.dozuki.com/Wiki/Using_external_stepper_motor_drivers
 
 ; Triple Point Kinematic Bed Ball Ponts Location
 ; Locations are from our CAD-Model, change to your measurement
-M671 X-10:115:260 Y-50:260:-50 S10		                                                  ; position of z spindles - for automatic bed leveling - check positions!
+M671 X-55:415:180 Y-25:-25:378 S10		                                                  ; position of z spindles - for automatic bed leveling - check positions!
 
 ; Axis and Motor Config
 M350 X16 Y16 Z16:16:16 E16:16:16:16:16 C16 I1                                           ; configure microstepping with interpolation
