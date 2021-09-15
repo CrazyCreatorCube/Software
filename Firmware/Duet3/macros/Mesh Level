@@ -1,0 +1,5 @@
+M561                     ; Unapply any existing mesh
+M558 H1					; Tram is done dont need to me so high
+M557 X35:360 Y15:330 P5  ; Define Grid
+G29                      ; Execute Probing
+M558 H3                  ; Put Probe back to normal
